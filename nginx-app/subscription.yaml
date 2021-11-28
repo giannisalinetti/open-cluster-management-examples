@@ -1,0 +1,10 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: sample-kube-resources-subscription
+  annotations:
+    apps.open-cluster-management.io/git-path: nginx-app/resources
+spec:
+  channel: kuberesources/sample-kube-resources-git
+  placement:
+    local: false
