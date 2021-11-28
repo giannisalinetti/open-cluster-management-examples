@@ -3,6 +3,8 @@
 This repository contains examples to be applied to an Open Cluster Management lab.
 Materials inside this repository are intended for demo purposes, not production.
 
+The examples in this repository are based on the official Open Cluster Management [documentation](https://open-cluster-management.io/concepts/).
+
 ## Application Lifecycle Management
 
 Open Cluster Management enables a GitOps-based approach to manage applications over
