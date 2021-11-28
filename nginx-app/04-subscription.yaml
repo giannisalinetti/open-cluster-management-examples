@@ -2,9 +2,13 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
   name: sample-kube-resources-subscription
+  namespace: nginx-app
   annotations:
     apps.open-cluster-management.io/git-path: nginx-app/resources
+    apps.open-cluster-management.io/git-branch: main 
 spec:
-  channel: kuberesources/sample-kube-resources-git
+  channel: nginx-app/sample-kube-resources-git
   placement:
-    local: false
+    placementRef:
+      kind: PlacementRule
+      name: placementrule-nginx-app
