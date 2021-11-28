@@ -4,7 +4,7 @@ metadata:
   name: sample-kube-resources-subscription
   namespace: nginx-app
   annotations:
-    apps.open-cluster-management.io/git-path: nginx-app/resources
+    apps.open-cluster-management.io/git-path: application-lifecycle-management/nginx-app/resources
     apps.open-cluster-management.io/git-branch: main 
 spec:
   channel: nginx-app/sample-kube-resources-git
