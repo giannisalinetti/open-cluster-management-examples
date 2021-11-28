@@ -12,6 +12,7 @@ kubectl create -f 01-lab-manageclustersetbinding.yaml
 kubectl create -f 02-lab-placement.yaml
 ```
 
-The `Placement` API automatically generate a `PlacementDecision` resource that contains the selected clusters.
+The `Placement` API automatically generate a `PlacementDecision` resource that contains the selected clusters. This example uses only
+label selectors to match the target clusters.
 Please refer to the [Placement documentation](https://open-cluster-management.io/concepts/placement/) for more detailes about **Selectors** and
 **Prioritzers** that can be used to filter out clusters in a more specific way.
