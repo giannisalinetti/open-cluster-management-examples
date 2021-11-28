@@ -1,0 +1,29 @@
+apiVersion: work.open-cluster-management.io/v1
+kind: ManifestWork
+metadata:
+  name: hello-work
+  namespace: cluster1
+  labels:
+    app: hello
+spec:
+  workload:
+    manifests:
+      - apiVersion: apps/v1
+        kind: Deployment
+        metadata:
+          name: hello
+          namespace: default
+        spec:
+          selector:
+            matchLabels:
+              app: hello
+          template:
+            metadata:
+              labels:
+                app: hello
+            spec:
+              containers:
+                - name: hello
+                  image: quay.io/asmacdo/busybox
+                  command:
+                    ["sh", "-c", 'echo "Hello, Kubernetes!" && sleep 3600']

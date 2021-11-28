@@ -15,6 +15,7 @@ clusters. The following examples are available:
 This folder contains practical example of multi-cluster-management:
 
 - [ManagedClusterSets](cluster-management/managedclustersets): an example of a `ManagedClusterSet` creation.
+- [ManifestWork](cluster-management/manifestwork): a sample `ManifestWork` that can be created on managed clusters.
 
 ### Maintainers
 Gianni Salinetti <gsalinet@redhat.com>
