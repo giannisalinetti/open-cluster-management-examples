@@ -4,7 +4,7 @@ metadata:
   name: nginx-app-subscription
   namespace: nginx-app
   annotations:
-    apps.open-cluster-management.io/git-path: application-lifecycle-management/nginx-app/resources/overlays/stage
+    apps.open-cluster-management.io/git-path: application-lifecycle-management/nginx-app-kustomize/resources/overlays/prod
     apps.open-cluster-management.io/git-branch: main 
     apps.open-cluster-management.io/reconcile-option: merge
   labels:
