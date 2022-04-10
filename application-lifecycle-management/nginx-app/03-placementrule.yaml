@@ -9,5 +9,5 @@ spec:
     type: ManagedClusterConditionAvailable
   clusterSelector:
     matchLabels:
-      env: lab
+      environment: lab
       
