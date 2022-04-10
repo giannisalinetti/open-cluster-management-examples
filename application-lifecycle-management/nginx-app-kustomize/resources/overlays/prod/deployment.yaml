@@ -4,6 +4,8 @@ metadata:
   name: sample-nginx-deployment
   labels:
     app: nginx
+  annotations:
+    environment: production
 spec:
   replicas: 3
   template:
