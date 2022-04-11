@@ -3,12 +3,12 @@ kind: Service
 metadata:
   labels:
     app: nginx
-  name: sample-nginx-deployment
+  name: nginx
 spec:
   ports:
-  - port: 80
+  - port: 8080
     protocol: TCP
-    targetPort: 80
+    targetPort: 8080
   selector:
     app: nginx
   sessionAffinity: None
