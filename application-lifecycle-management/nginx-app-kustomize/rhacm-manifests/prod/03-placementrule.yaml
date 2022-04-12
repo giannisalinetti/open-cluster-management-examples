@@ -6,5 +6,5 @@ metadata:
 spec:
   clusterSelector:
     matchLabels:
-      environment: lab
+      environment: prod
       
