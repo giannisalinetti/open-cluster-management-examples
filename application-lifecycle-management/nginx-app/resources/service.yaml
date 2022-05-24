@@ -6,10 +6,10 @@ metadata:
   name: sample-nginx-deployment
 spec:
   ports:
-  - port: 80
+  - port: 8080
     protocol: TCP
-    targetPort: 80
+    targetPort: 8080
   selector:
     app: nginx
   sessionAffinity: None
-  type: ClusterIP
+  type: NodePort
